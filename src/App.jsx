@@ -13,7 +13,7 @@ function App() {
           <span style={{ color: "#bca7f2" }}>kenco</span> 의 가계부
           <span style={{ fontSize: "40px" }}> 💜</span>
         </h1>
-        <Summary />
+        <Summary transactions={transactions} />
         <TransactionUpdate addTransaction={addTransaction} />
         <History
           transactions={transactions}

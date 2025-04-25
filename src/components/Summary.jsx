@@ -1,10 +1,7 @@
 import React from "react";
 import css from "./../css/Summary.module.css";
-import useTransactions from "../../hooks/useTransactions";
 
-const Summary = () => {
-  const { transactions } = useTransactions();
-
+const Summary = ({ transactions }) => {
   const income = transactions
     .filter((t) => t.type === "income")
     .reduce((acc, curr) => acc + curr.amount, 0);
