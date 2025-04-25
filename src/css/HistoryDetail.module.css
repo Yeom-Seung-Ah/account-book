@@ -1,4 +1,13 @@
+@font-face {
+  font-family: "EarlyFontDiary";
+  src: url("https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .item {
+  font-family: "EarlyFontDiary";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +47,7 @@
 
 .date {
   margin-left: 8px;
-  font-size: 12px;
+  font-size: 10px;
   color: #797979;
   white-space: nowrap;
 }

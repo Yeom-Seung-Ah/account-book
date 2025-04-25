@@ -9,7 +9,10 @@ function App() {
   return (
     <div className="main-container">
       <div className="main-content">
-        <h1>나의 가계부</h1>
+        <h1>
+          <span style={{ color: "#bca7f2" }}>kenco</span> 의 가계부
+          <span style={{ fontSize: "40px" }}> 💜</span>
+        </h1>
         <Summary />
         <TransactionUpdate addTransaction={addTransaction} />
         <History

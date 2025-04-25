@@ -2,6 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@600&display=swap");
+@font-face {
+  font-family: "NEXON Lv2 Gothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ownglyph_meetme-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -9,24 +23,10 @@
   box-sizing: border-box;
 }
 :root {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "NEXON Lv2 Gothic", "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-
-  --dark-colors-accent-dark: #b4a186;
-  --dark-colors-light-gray-dark: #9a9a9a;
-  --dark-colors-gray-dark: #3d3d3d;
-  --dark-colors-dark-gray-dark: #272727;
-  --dark-colors-black-dark: #0a0a0a;
-  --dark-colors-white-dark: #fbfbfb;
-  --light-colors-errors-light: #d82700;
-  --light-colors-accent-light: #a18a68;
-  --light-colors-black-light: #000000;
-  --light-colors-dark-gray-light: #707070;
-  --light-colors-gray-light: #d8d8d8;
-  --light-colors-light-gray-light: #efefef;
-  --light-colors-white-light: #ffffff;
 
   --fs8: 8px;
   --fs12: 12px;
@@ -58,10 +58,12 @@ body {
 
 h1 {
   font-weight: 600;
+  font-size: 3rem;
+  font-family: "Ownglyph_meetme-Rg";
 }
 
 .main-content {
-  margin-top: 40px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2열 구성 */
   grid-template-rows: auto auto; /* 필요한 만큼 두 행 */
