@@ -84,3 +84,17 @@ h1 {
 .main-content > .history {
   grid-column: 2;
 }
+
+/* 반응형 미디어 쿼리 */
+@media (max-width: 720px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content > h1,
+  .main-content > .summary,
+  .main-content > .transaction-update,
+  .main-content > .history {
+    grid-column: auto; /* 각 요소 1열로 */
+  }
+}
