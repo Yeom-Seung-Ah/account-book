@@ -1,8 +1,9 @@
 .container {
   width: 350px;
-  max-height: 300px;
-  padding: 1rem;
+  max-height: 280px;
+  padding: 1rem 1rem 1rem 0rem;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .stickyHeader {

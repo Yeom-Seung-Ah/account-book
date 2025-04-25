@@ -39,16 +39,21 @@
   line-height: 1.6;
 }
 body {
-  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
   max-width: 1200px;
-  width: calc(100% - 4rem);
-  margin: auto;
+  width: 100%;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
