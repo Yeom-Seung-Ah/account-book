@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import css from "./../css/TransactionUpdate.module.css";
-import useTransactions from "./../../hooks/useTransactions";
 
-const TransactionUpdate = () => {
+const TransactionUpdate = ({ addTransaction }) => {
   const [transactionDetailText, setTransactionDetailText] = useState("");
   const [transactionDetailMoney, setTransactionDetailMoney] = useState("");
   const [isIncome, setIsIncome] = useState(true);
@@ -10,7 +9,6 @@ const TransactionUpdate = () => {
   const handleRadioChange = (e) => {
     setIsIncome(e.target.value === "income");
   };
-  const { addTransaction } = useTransactions();
   // 버튼 클릭 시
   const handleAddTransaction = () => {
     const newTransaction = {
@@ -37,6 +35,7 @@ const TransactionUpdate = () => {
         <label htmlFor="input_1">거래 내용</label>
         <input
           id="input_1"
+          type="text"
           value={transactionDetailText}
           onChange={(e) => setTransactionDetailText(e.target.value)}
           placeholder={"내용 입력..."}

@@ -24,7 +24,7 @@ const useTransactions = () => {
     );
   };
 
-  // 거래 삭제 함수 (선택사항)
+  // 거래 삭제 함수
   const removeTransaction = (id) => {
     const updatedTransactions = transactions.filter((tx) => tx.id !== id);
     setTransactions(updatedTransactions);

@@ -1,3 +1,61 @@
-.container {
-  border: 1px solid blue;
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin-left: 24px;
+  margin-bottom: 12px;
+  width: calc(100% - 24px);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.income {
+  border-right: 5px solid green;
+  background-color: #f0fff4;
+}
+
+.expense {
+  border-right: 5px solid red;
+  background-color: #fff5f5;
+}
+
+.text {
+  flex: 1;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.amount {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.date {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #797979;
+  white-space: nowrap;
+}
+
+.deleteButton {
+  position: absolute;
+  left: -28px; /* 아이템 왼쪽 바깥으로 튀어나오게 */
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 6px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 2;
+}
+
+.item:hover .deleteButton {
+  opacity: 1;
 }

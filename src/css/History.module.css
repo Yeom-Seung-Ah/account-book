@@ -1,3 +1,35 @@
 .container {
-  border: 1px solid green;
+  width: 350px;
+  max-height: 300px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  background: #f6f6f6;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  z-index: 1;
+  text-align: left; /* 왼쪽 정렬 */
+  margin-left: 24px;
+}
+
+.scrollArea {
+  overflow-y: auto;
+  height: 100%;
+  padding-right: 6px;
+}
+
+/* 예쁜 스크롤바 */
+.scrollArea::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollArea::-webkit-scrollbar-thumb {
+  background-color: #bca7f2;
+  border-radius: 4px;
+}
+.scrollArea::-webkit-scrollbar-track {
+  background-color: transparent;
 }
