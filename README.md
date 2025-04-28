@@ -1,3 +1,5 @@
+<img src="./src//assets/account-book.png">
+
 ```
 account-book
 ├─ eslint.config.js
@@ -27,8 +29,6 @@ account-book
 └─ vite.config.js
 
 ```
-
-<img src="./src//assets/account-book.png">
 
 ## 개요
 
