@@ -28,6 +28,8 @@ account-book
 
 ```
 
+<img src="./src//assets/account-book.png">
+
 ## 개요
 
 사용자가 수입과 지출을 기록하고 잔액을 관리할 수 있는 웹 애플리케이션으로,
