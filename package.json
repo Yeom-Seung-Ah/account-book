@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Yeom-Seung-Ah/account-book.git",
+  "homepage": "https://Yeom-Seung-Ah.github.io/account-book",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
