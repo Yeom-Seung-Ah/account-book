@@ -2,7 +2,7 @@ import "./App.css";
 import History from "./components/History";
 import Summary from "./components/Summary";
 import TransactionUpdate from "./components/TransactionUpdate";
-import useTransactions from "../hooks/useTransactions";
+import useTransactions from "./hooks/useTransactions";
 
 function App() {
   const { transactions, addTransaction, removeTransaction } = useTransactions();
